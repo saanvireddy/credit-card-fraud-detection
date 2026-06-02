@@ -1,16 +1,16 @@
-# 💳 Credit Card Fraud Detection
+# Credit Card Fraud Detection
 
 An end-to-end machine learning pipeline to detect fraudulent credit card transactions using **XGBoost**, **SMOTE** for class imbalance, and **SHAP** for model explainability — deployed as an interactive **Streamlit** web application.
 
 ---
 
-## 🔍 Problem Statement
+## Problem Statement
 
 Financial fraud costs institutions **billions of dollars annually**. This project builds a production-ready ML pipeline that predicts fraudulent transactions in real time, enabling financial institutions to flag suspicious activity before it causes damage.
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 - **Source:** ULB Machine Learning Group via [Kaggle](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
 - **Size:** 284,807 transactions with only 492 fraud cases
@@ -19,7 +19,7 @@ Financial fraud costs institutions **billions of dollars annually**. This projec
 
 ---
 
-## ⚡ Key Challenge — Class Imbalance
+## Key Challenge — Class Imbalance
 
 With only 0.17% fraud cases, a naive model would predict "legitimate" for everything and still achieve 99.8% accuracy — completely useless in practice.
 
@@ -27,7 +27,7 @@ With only 0.17% fraud cases, a naive model would predict "legitimate" for everyt
 
 ---
 
-## 🤖 Models Compared
+## Models Compared
 
 | Model | AUC-ROC | F1 (Fraud) | Precision | Recall |
 |---|---|---|---|---|
@@ -39,7 +39,7 @@ With only 0.17% fraud cases, a naive model would predict "legitimate" for everyt
 
 ---
 
-## 🔎 SHAP Explainability
+## SHAP Explainability
 
 Model explainability is essential in fintech — regulators and business stakeholders need to understand *why* a transaction was flagged.
 
@@ -49,17 +49,17 @@ Model explainability is essential in fintech — regulators and business stakeho
 - **V12** — significant contributor to fraud probability
 - **V10** — notable fraud signal
 
-![SHAP Summary](../Downloads/shap_summary.png)
+![SHAP Summary](shap_summary.png)
 
 ---
 
-## 📈 ROC Curve
+## ROC Curve
 
-![ROC Curve](../Downloads/roc_curve.png)
+![ROC Curve](roc_curve.png)
 
 ---
 
-## 🚀 Streamlit App
+## Streamlit App
 
 Interactive web app allowing users to input transaction features and get real-time fraud probability with prediction confidence.
 
@@ -73,7 +73,7 @@ python -m streamlit run app/app.py
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 credit-card-fraud-detection/
@@ -95,7 +95,7 @@ credit-card-fraud-detection/
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Category | Tools |
 |---|---|
@@ -109,7 +109,7 @@ credit-card-fraud-detection/
 
 ---
 
-## 💡 Key Findings
+## Key Findings
 
 - SMOTE oversampling improved fraud recall by **46%** (0.61 → 0.89)
 - XGBoost outperformed Logistic Regression baseline by **13%** on F1 score
@@ -118,7 +118,7 @@ credit-card-fraud-detection/
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 **Saanvi Reddy Baradi**  
 M.S. Artificial Intelligence & Business Analytics — University of South Florida  
