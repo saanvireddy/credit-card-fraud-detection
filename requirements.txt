@@ -7,4 +7,4 @@ shap
 streamlit
 joblib
 matplotlib
-seabornS
+seaborn
